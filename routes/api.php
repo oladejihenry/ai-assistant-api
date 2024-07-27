@@ -16,6 +16,6 @@ Route::get('travel-assistant', TravelAssistantController::class);
 
 Route::get('fitness-coach', FitnessCoachController::class);
 
-Route::post('audio-transcribe', AudioTranscribeController::class);
-
 Route::post('audio-process', AudioProcessController::class);
+
+Route::post('audio-transcribe', AudioTranscribeController::class);
