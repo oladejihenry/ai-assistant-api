@@ -35,6 +35,8 @@ class TravelAssistantController extends Controller
         foreach ($stream as $response) {
             $text = $response->choices[0]->delta->content ?? '';
 
+
+
             if (connection_aborted()) {
                 break;
             }

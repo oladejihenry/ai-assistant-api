@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AudioSummariseController;
+use App\Http\Controllers\AudioTranscribeController;
 use App\Http\Controllers\FitnessCoachController;
 use App\Http\Controllers\TravelAssistantController;
 use Illuminate\Http\Request;
@@ -12,3 +14,5 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 Route::get('travel-assistant', TravelAssistantController::class);
 
 Route::get('fitness-coach', FitnessCoachController::class);
+
+Route::post('audio-transcribe', AudioTranscribeController::class);
