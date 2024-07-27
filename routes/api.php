@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AudioProcessController;
 use App\Http\Controllers\AudioSummariseController;
 use App\Http\Controllers\AudioTranscribeController;
 use App\Http\Controllers\FitnessCoachController;
@@ -16,3 +17,5 @@ Route::get('travel-assistant', TravelAssistantController::class);
 Route::get('fitness-coach', FitnessCoachController::class);
 
 Route::post('audio-transcribe', AudioTranscribeController::class);
+
+Route::post('audio-process', AudioProcessController::class);

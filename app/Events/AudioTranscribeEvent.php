@@ -10,6 +10,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcastNow;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Log;
 
 class AudioTranscribeEvent implements ShouldBroadcastNow
 {
@@ -19,7 +20,8 @@ class AudioTranscribeEvent implements ShouldBroadcastNow
      * Create a new event instance.
      */
     public function __construct(
-        public string $word
+        public string $word,
+
     ) {
     }
 
